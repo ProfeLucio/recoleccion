@@ -1,0 +1,66 @@
+<div class="container-fluid mt-3">
+  <div class="row">
+    <div class="col-md-9">
+      <div class="map-container shadow-sm" id="mapa"></div>
+    </div>
+
+    <div class="col-md-3">
+    <h4>Controles de Ruta</h4>
+
+    <div class="mb-3">
+      <label for="perfilSelect" class="form-label fw-bold">Perfil de Trabajo:</label>
+      <select id="perfilSelect" class="form-select" (change)="onPerfilSelected($event)">
+        <option value="" disabled selected>Seleccione un perfil...</option>
+        @for (perfil of perfiles; track perfil.id) {
+          <option [value]="perfil.id">{{ perfil.nombre_perfil }}</option>
+        }
+      </select>
+    </div>
+
+    <hr>
+
+      @if (!isDrawingMode) {
+        <div class="d-grid">
+          <button class="btn btn-primary" (click)="startDrawingMode()">
+            <i class="bi bi-pencil-square"></i> Registrar Nueva Ruta
+          </button>
+        </div>
+      }
+
+      @if (isDrawingMode) {
+        <div class="card bg-light border-primary">
+          <div class="card-body">
+            <h5 class="card-title">Creando Nueva Ruta...</h5>
+            <p class="card-text text-muted small">Selecciona los tramos de calle en el mapa.</p>
+
+            <div class="mb-3">
+              <label for="routeName" class="form-label">Nombre de la Ruta:</label>
+              <input type="text" id="routeName" class="form-control" [(ngModel)]="newRouteName" placeholder="Ej: Ruta Centro Lunes">
+            </div>
+
+            <div class="d-grid gap-2">
+              <button class="btn btn-success" (click)="saveRoute()" [disabled]="!newRouteName || selectedStreets.length === 0">
+                Guardar Ruta
+              </button>
+              <button class="btn btn-danger" (click)="cancelDrawingMode()">
+                Cancelar
+              </button>
+            </div>
+          </div>
+        </div>
+      }
+
+      <div class="mt-4">
+        <h6>Rutas Existentes</h6>
+        <select class="form-select" (change)="onRutaSelected($event)">
+          <option value="" disabled selected>Ver rutas guardadas...</option>
+
+          @for (ruta of rutasGuardadas; track ruta.id) {
+            <option [value]="ruta.id">{{ ruta.nombre_ruta }}</option>
+          }
+        </select>
+      </div>
+
+    </div>
+  </div>
+</div>
