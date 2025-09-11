@@ -6,7 +6,7 @@ import { Observable, of } from 'rxjs';
   providedIn: 'root'
 })
 export class MapaService {
-  private apiUrl = 'http://localhost:8000/api';
+  private apiUrl = 'http://apirecoleccion.gonzaloandreslucio.com/api';
 
   // NUEVO: Guardará el ID del perfil que el usuario seleccione
   public activeProfileId: string | null = null;
