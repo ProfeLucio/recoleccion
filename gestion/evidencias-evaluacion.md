@@ -1,0 +1,1 @@
+# Evidencias y evaluacion\n\nGitHub registra Issues, commits, ramas, Pull Requests, documentos y releases. Teams conserva reuniones y evidencias audiovisuales. Moodle recibe las tres entregas formales. GitHub Project visualiza el estado del trabajo.\n
