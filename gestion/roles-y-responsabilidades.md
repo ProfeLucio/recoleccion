@@ -1,0 +1,1 @@
+# Roles y responsabilidades\n\nCada estudiante tiene una responsabilidad principal dentro de una celula y una responsabilidad transversal. Las responsabilidades no son exclusivas de una fase: todos deben participar en analisis, diseno, desarrollo, pruebas, documentacion e integracion. Ver [docs/gestion-del-proyecto.md](../docs/gestion-del-proyecto.md).\n
