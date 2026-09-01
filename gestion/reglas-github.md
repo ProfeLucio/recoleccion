@@ -1,0 +1,1 @@
+# Reglas de trabajo en GitHub\n\nToda actividad se registra como Issue. El desarrollo se realiza en ramas y se integra mediante Pull Request. La rama main debe permanecer estable. Los cambios transversales requieren revision del equipo responsable. Ver [docs/gestion-del-proyecto.md](../docs/gestion-del-proyecto.md).\n
