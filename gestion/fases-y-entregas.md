@@ -1,0 +1,1 @@
+# Fases y entregas\n\nEl proyecto se organiza en ocho fases: validacion del problema; alcance; celulas y roles; UX/UI; arquitectura y API; desarrollo e integracion; despliegue; calidad y defensa. Las entregas corresponden a 30%, 30% y 40%. Ver las [Issues del proyecto](../README.md#issues-del-proyecto).\n
