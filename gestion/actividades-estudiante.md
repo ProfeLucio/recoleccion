@@ -1,0 +1,1 @@
+# Actividades del estudiante\n\nDurante 13 semanas se desarrollan actividades de organizacion, trabajo de campo, trabajo vertical por celula, trabajo horizontal por equipos transversales y trabajo individual por rol. El detalle se encuentra en [docs/plan-seminario-actualizacion-I.md](../docs/plan-seminario-actualizacion-I.md).\n
