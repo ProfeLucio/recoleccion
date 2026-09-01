@@ -1,0 +1,1 @@
+# Cronograma de Seminario I\n\nConsultar el cronograma completo en [docs/cronograma-seminario-I.md](../docs/cronograma-seminario-I.md). Este documento se mantiene como punto de entrada de la gestion academica.\n
